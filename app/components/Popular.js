@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import SelectedLanguage from './SelectedLanguage'
 
 export default class Popular extends Component {
   constructor(props) {
@@ -14,22 +15,13 @@ export default class Popular extends Component {
     })
   }
   render() {
-    const languages = ['All', 'Javascript', 'Ruby', 'Java', 'CSS', 'Python']
     return (
-      <ul className="languages">
-        {languages.map(lang => {
-          return (
-            <li
-              key={lang}
-              style={
-                lang === this.state.selectedLanguage ? {color: 'tomato'} : null
-              }
-              onClick={this.updateLanguage.bind(null, lang)}>
-              {lang}
-            </li>
-          )
-        })}
-      </ul>
+      <div>
+        <SelectedLanguage
+          onSelect={this.updateLanguage}
+          selectedLanguage={this.state.selectedLanguage}
+        />
+      </div>
     )
   }
 }
