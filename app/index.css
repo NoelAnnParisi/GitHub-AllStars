@@ -1,0 +1,23 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.languages {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  padding: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.languages li {
+  margin: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
