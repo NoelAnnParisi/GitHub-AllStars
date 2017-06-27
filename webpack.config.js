@@ -6,6 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index_bundle.js',
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -13,10 +14,11 @@ module.exports = {
         test: /\.(js)$/,
         use: 'babel-loader',
       },
-      // this is what makes your CSS available from
-      // our require syntax in index.js
       {test: /\.css$/, use: ['style-loader', 'css-loader']},
     ],
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
