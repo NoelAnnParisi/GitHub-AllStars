@@ -1,12 +1,13 @@
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.languages {
-  display: flex;
-  justify-content: center;
-}
+font-family: -apply-system,
+  BlinkMacSystemFont,
+  Segoe,
+  UI,
+  Roboto,
+  Oxygen-Sans,
+  Ubuntu,
+  Cantarell,
+  Helvetica Neue,
+  sans-serif;
 
 a {
   text-decoration: none;
@@ -19,6 +20,16 @@ ul {
 
 li {
   list-style-type: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.languages {
+  display: flex;
+  justify-content: center;
 }
 
 .languages li {
@@ -132,4 +143,17 @@ li {
   text-align: center;
   font-size: 30px;
   font-weight: 200;
+}
+
+.reset {
+  border: none;
+  background: transparent;
+  color: #d0021b;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.reset:hover {
+  cursor: pointer;
 }
