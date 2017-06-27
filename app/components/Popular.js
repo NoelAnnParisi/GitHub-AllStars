@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import SelectedLanguage from './SelectedLanguage'
+import SelectedLanguage from '../screens/SelectedLanguage'
 import api from '../utils/app'
 
 import RepoGrid from '../screens/RepoGrid'

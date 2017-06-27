@@ -1,7 +1,7 @@
 import React from 'react'
 
 // changes the css of selected navbar item
-const NavLink = require('react-router-dom').NavLink
+import {NavLink} from 'react-router-dom'
 
 const Nav = () => {
   return (

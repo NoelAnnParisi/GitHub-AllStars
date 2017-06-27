@@ -1,5 +1,3 @@
-// move to screens folder & change import on Popular.js
-
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 

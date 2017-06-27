@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
-const Link = require('react-router-dom').Link
+import {Link} from 'react-router-dom'
 
 export default class Home extends Component {
   render() {
