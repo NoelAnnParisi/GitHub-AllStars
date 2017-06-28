@@ -1,5 +1,5 @@
 # GitHub-AllStars
-Who's GitHub reigns supreme? This single page web app allows you to batlle your friends & discover the most popular GitHub repos.
+Who's GitHub reigns supreme? This single page web app allows you to battle your friends & discover the most popular GitHub repos.
 
 ## Built using:
 * React 
