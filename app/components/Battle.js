@@ -35,7 +35,6 @@ export default class Battle extends Component {
   }
   render() {
     const match = this.props.match
-    console.log(match)
     const playerOneName = this.state.playerOneName
     const playerTwoName = this.state.playerTwoName
     const playerOneImage = this.state.playerOneImage
@@ -51,12 +50,13 @@ export default class Battle extends Component {
             />}
 
           {playerOneImage != null &&
-            <PlayerPreview
-              avatar={playerOneImage}
-              username={playerOneName}
-              id="playerOne"
-              onReset={this.handleReset}
-            />}
+            <PlayerPreview avatar={playerOneImage} username={playerOneName}>
+              <button
+                className="reset"
+                onClick={this.handleReset.bind(null, 'playerOne')}>
+                Reset
+              </button>
+            </PlayerPreview>}
           {!playerTwoName &&
             <PlayerInput
               id="playerTwo"
@@ -64,12 +64,13 @@ export default class Battle extends Component {
               onSubmit={this.handleSubmit}
             />}
           {playerTwoImage != null &&
-            <PlayerPreview
-              avatar={playerTwoImage}
-              username={playerTwoName}
-              id="playerTwo"
-              onReset={this.handleReset}
-            />}
+            <PlayerPreview avatar={playerTwoImage} username={playerTwoName}>
+              <button
+                className="reset"
+                onClick={this.handleReset.bind(null, 'playerTwo')}>
+                Reset
+              </button>
+            </PlayerPreview>}
         </div>
         {playerOneImage &&
           playerTwoImage &&
