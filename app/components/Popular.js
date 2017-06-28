@@ -3,6 +3,7 @@ import SelectedLanguage from '../screens/SelectedLanguage'
 import api from '../utils/app'
 
 import RepoGrid from '../screens/RepoGrid'
+import Loading from './Loading'
 
 export default class Popular extends Component {
   constructor(props) {
@@ -39,7 +40,7 @@ export default class Popular extends Component {
           selectedLanguage={this.state.selectedLanguage}
         />
         {!this.state.repos
-          ? <p className="loading">LOADING</p>
+          ? <Loading text="Grabbing Repos" />
           : <RepoGrid repos={this.state.repos} />}
       </div>
     )

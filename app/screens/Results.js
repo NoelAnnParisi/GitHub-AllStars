@@ -4,6 +4,7 @@ import {Link} from 'react-router'
 import queryString from 'query-string'
 
 import api from '../utils/app'
+import Loading from '../components/Loading'
 import Player from '../components/Player'
 import PlayerPreview from './PlayerPreview'
 import Profile from './Profile'
@@ -44,7 +45,7 @@ class Results extends Component {
     const error = this.state.error
     const loading = this.state.loading
     if (loading) {
-      return <p>Loading</p>
+      return <Loading text="Calculating a winner" />
     }
     if (error) {
       return (
