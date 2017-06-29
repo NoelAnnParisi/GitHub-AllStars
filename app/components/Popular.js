@@ -40,7 +40,7 @@ export default class Popular extends Component {
           selectedLanguage={this.state.selectedLanguage}
         />
         {!this.state.repos
-          ? <Loading text="Grabbing Repos" />
+          ? <Loading text="Fetching" />
           : <RepoGrid repos={this.state.repos} />}
       </div>
     )

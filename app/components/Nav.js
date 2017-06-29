@@ -8,18 +8,18 @@ const Nav = () => {
     <ul className="nav">
       <li>
         <NavLink exact={true} activeClassName="active" to="/">
-          HOME
+          <p className="emojis">🏠</p>
         </NavLink>
       </li>
 
       <li>
         <NavLink exact={true} activeClassName="active" to="/battle">
-          BATTLE
+          <p className="emojis">⚔</p>
         </NavLink>
       </li>
       <li>
         <NavLink exact={true} activeClassName="active" to="/popular">
-          POPULAR
+          <p className="emojis">💁</p>
         </NavLink>
       </li>
     </ul>
